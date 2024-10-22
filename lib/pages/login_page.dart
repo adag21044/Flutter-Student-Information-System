@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'student_welcome_page.dart';
-import 'professor_welcome_page.dart';
 import 'secretary_welcome_page.dart';
+import 'professor_welcome_page.dart';
+import 'student_welcome_page.dart';
 
 class LoginPage extends StatefulWidget {
   @override
@@ -66,17 +66,17 @@ class _LoginPageState extends State<LoginPage> {
     if (_selectedRole == 'Student') {
       Navigator.push(
         context,
-        MaterialPageRoute(builder: (context) => StudentWelcomePage()),
+        MaterialPageRoute(builder: (context) => StudentPage()),
       );
     } else if (_selectedRole == 'Professor') {
       Navigator.push(
         context,
-        MaterialPageRoute(builder: (context) => ProfessorWelcomePage()),
+        MaterialPageRoute(builder: (context) => ProfessorPage()),
       );
     } else if (_selectedRole == 'Secretary') {
       Navigator.push(
         context,
-        MaterialPageRoute(builder: (context) => SecretaryWelcomePage()),
+        MaterialPageRoute(builder: (context) => SecretaryPage()),
       );
     }
   }

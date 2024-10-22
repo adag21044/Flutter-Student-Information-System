@@ -1,16 +1,29 @@
 import 'package:flutter/material.dart';
 
-class ProfessorWelcomePage extends StatelessWidget {
+class ProfessorPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Professor Welcome Page'),
+        title: Text('Professor Page'),
       ),
       body: Center(
-        child: Text(
-          'Welcome, Professor!',
-          style: TextStyle(fontSize: 24),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            ElevatedButton(
+              onPressed: () {
+                // Logic to teach a class
+              },
+              child: Text('Teach Class'),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                // Logic to conduct an exam
+              },
+              child: Text('Conduct Exam'),
+            ),
+          ],
         ),
       ),
     );
